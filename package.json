@@ -7,8 +7,8 @@
       "start": "live-server ./src/"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/psmyrdek/js-patterns.git"
+      "type": "github",
+      "url": "github+https://github.com/aleksandra0291/wzorce"
     }
   }
   
