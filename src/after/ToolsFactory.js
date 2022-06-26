@@ -1,16 +1,16 @@
 import { Brush } from './Brush.js';
 import { Pencil } from './Pencil.js';
 import { Shape } from './Shape.js';
-
-export class ToolsFactory {
+// FACTORY PATTERN - 
+export class ToolsFactory {//  w farbryce mamy zarejestrowane 3 narzędzia pędzel, ołówek i kształty//
 
     constructor() {
         this.brush = new Brush(20, 'lightblue');
         this.pencil = new Pencil(3, 'red');
-        this.shape = new Shape(20, 'red');
+        this.shape = new Shape(20, 'red'); //  określenie jak tworzone są  narzędzia w aplikacji
     }
 
-    getTool(tool) {
+    getTool(tool) { // funkcja selektora zwracająca nam odpowiednią instancję
         switch (tool) {
             case 'brush':
                 return this.brush;
